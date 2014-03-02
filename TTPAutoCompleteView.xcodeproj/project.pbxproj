@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1995BBB18C0B00A0079E99D /* AutoCompleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1995BB918C0B00A0079E99D /* AutoCompleteViewController.m */; };
 		F1E8AE2318C0AD7700E494F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E8AE2218C0AD7700E494F3 /* Foundation.framework */; };
 		F1E8AE2518C0AD7700E494F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E8AE2418C0AD7700E494F3 /* CoreGraphics.framework */; };
 		F1E8AE2718C0AD7700E494F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E8AE2618C0AD7700E494F3 /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F1995BB818C0B00A0079E99D /* AutoCompleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoCompleteViewController.h; sourceTree = "<group>"; };
+		F1995BB918C0B00A0079E99D /* AutoCompleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoCompleteViewController.m; sourceTree = "<group>"; };
 		F1E8AE1F18C0AD7700E494F3 /* TTPAutoCompleteView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTPAutoCompleteView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E8AE2218C0AD7700E494F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F1E8AE2418C0AD7700E494F3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,6 +123,8 @@
 				F1E8AE3718C0AD7800E494F3 /* Main_iPad.storyboard */,
 				F1E8AE3A18C0AD7800E494F3 /* ViewController.h */,
 				F1E8AE3B18C0AD7800E494F3 /* ViewController.m */,
+				F1995BB818C0B00A0079E99D /* AutoCompleteViewController.h */,
+				F1995BB918C0B00A0079E99D /* AutoCompleteViewController.m */,
 				F1E8AE3D18C0AD7800E494F3 /* Images.xcassets */,
 				F1E8AE2918C0AD7700E494F3 /* Supporting Files */,
 			);
@@ -252,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1995BBB18C0B00A0079E99D /* AutoCompleteViewController.m in Sources */,
 				F1E8AE3C18C0AD7800E494F3 /* ViewController.m in Sources */,
 				F1E8AE3318C0AD7800E494F3 /* AppDelegate.m in Sources */,
 				F1E8AE2F18C0AD7800E494F3 /* main.m in Sources */,
@@ -473,6 +479,7 @@
 				F1E8AE5618C0AD7800E494F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1E8AE5718C0AD7800E494F3 /* Build configuration list for PBXNativeTarget "TTPAutoCompleteViewTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +488,7 @@
 				F1E8AE5918C0AD7800E494F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
