@@ -82,9 +82,8 @@
     CGRect frame = textField.frame;
     [UIView animateWithDuration:0.5 animations:^{
         self.view.frame = CGRectMake(frame.origin.x, frame.origin.y+frame.size.height, frame.size.width, self.tableView.rowHeight*[filteredTableData count]);
-        self.tableView.layer.borderColor = [UIColor redColor].CGColor;
-        self.tableView.layer.borderWidth = 3.0f;
         self.tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.tableView.rowHeight*[filteredTableData count]);
+
     } completion:^(BOOL finished) {
     }];
 
@@ -199,7 +198,6 @@
 }
 */
 
-/*
 #pragma mark - Table view delegate
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -212,8 +210,10 @@
     
     // Push the view controller.
     // [self.navigationController pushViewController:detailViewController animated:YES];
-    NSLog(@"Clicked");
+    [self.textField setText:[self.autoCompleteItems objectAtIndex:indexPath.row]];
+    if ([self.delegate respondsToSelector:@selector(selectedItemAtIndex:)]) {
+        [self.delegate selectedItemAtIndex:indexPath.row];
+    }
 }
-*/
 
 @end
